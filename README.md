@@ -40,7 +40,7 @@ export default class App extends Component {
 `Navigator` will pass a `navigator` to all of the `Scene`s it manages.
 
 ### navigator.open
-Open any scene you have configured with `Navigator`.
+Open any scene you have configured with `Navigator`. The send parameters will be available under the path `props.scene.params` in the newly openend scene.
 `navigator.open(reference, params)`
 ```
 examplePressHandler() {
